@@ -12,6 +12,12 @@ gulp.task('server', ->
   app.listen(3000)
 )
 
+gulp.task('production-server', ->
+  app = express()
+  app.use(express.static(path.join(__dirname, 'dist')));
+  app.listen(80)
+)
+
 gulp.task('html', -> 
   gulp.src('./src/views/*.html')
     .pipe(coffee({bare: true}).on('error', gutil.log))
