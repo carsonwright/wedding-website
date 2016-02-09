@@ -1,6 +1,6 @@
 /* ==================================================
-//  ____  _     _   _            _   _          _____ _                              
-// |  _ \(_)___| |_(_)_ __   ___| |_(_)_   ____|_   _| |__   ___ _ __ ___   ___  ___ 
+//  ____  _     _   _            _   _          _____ _
+// |  _ \(_)___| |_(_)_ __   ___| |_(_)_   ____|_   _| |__   ___ _ __ ___   ___  ___
 // | | | | / __| __| | '_ \ / __| __| \ \ / / _ \| | | '_ \ / _ \ '_ ` _ \ / _ \/ __|
 // | |_| | \__ \ |_| | | | | (__| |_| |\ V /  __/| | | | | |  __/ | | | | |  __/\__ \
 // |____/|_|___/\__|_|_| |_|\___|\__|_| \_/ \___||_| |_| |_|\___|_| |_| |_|\___||___/
@@ -19,7 +19,7 @@ $(document).ready(function(){
       navigationText: [
       "<i class='pe-7s-angle-left'></i>",
       "<i class='pe-7s-angle-right'></i>"
-      ], 
+      ],
       autoPlay: 8000,
       loop: true
     });
@@ -79,7 +79,7 @@ $(document).ready(function(){
       $('html, body').animate({
         scrollTop: $("body").offset().top
       }, 500);
-    }); 
+    });
 
     $('.vertical-center').flexVerticalCenter({ cssAttribute: 'padding-top' });
 
@@ -156,13 +156,13 @@ $(document).ready(function(){
         $('#search-wrapper').addClass('open');
         $('#search-wrapper > form > input[type="search"]').focus();
     });
-    
+
     $('#search-wrapper, #search-wrapper button.close').on('click keyup', function(event) {
         if (event.target == this || event.target.className == 'close' || event.keyCode == 27) {
             $(this).removeClass('open');
         }
     });
-    
+
     $('form').submit(function(event) {
         event.preventDefault();
         return false;
@@ -270,7 +270,7 @@ function updateState() {
 
 var feed = new Instafeed({
     get: 'tagged',
-    tagName: 'wedding',
+    tagName: 'thewrightone2016',
     clientId: '36c69579e891432f9cab8bb8752778e8',
     template: '<img src="{{image}}" />',
     resolution: 'low_resolution',
