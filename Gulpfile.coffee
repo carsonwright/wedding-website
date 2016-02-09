@@ -35,4 +35,7 @@ gulp.task('watch', ->
         gulp.start('coffee', done)
     )
 )
-gulp.task('default', ['coffee', 'watch', 'server'])
+if process.env.PRODUCTION
+  gulp.task('default', ['coffee', 'watch', 'production-server'])
+else
+  gulp.task('default', ['coffee', 'watch', 'server'])
