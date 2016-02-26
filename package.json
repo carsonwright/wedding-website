@@ -4,6 +4,7 @@
   "description": "Sveta and Carson's wedding website",
   "main": "index.js",
   "scripts": {
+    "start": "./node_modules/.bin/coffee ./src/app.coffee",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

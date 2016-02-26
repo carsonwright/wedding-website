@@ -31,6 +31,12 @@
     <link href="assets/css/pe-icons.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.min.js"></script>
+
+    <script language="javascript" type="text/javascript">
+      function resizeIframe(obj) {
+        obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+      }
+    </script>
 </head>
 
 <body id="page-top" class="index">
@@ -82,22 +88,19 @@
         </div>
 
         <!-- Header -->
-        <header id="headerwrap" class="backstretched fullheight">
+        <header id="headerwrap" class="backstretched fullheight mb100">
             <canvas id="fettiwrap"></canvas>
             <div class="container vertical-center">
                 <div class="intro-text vertical-center text-center smoothie">
-
                     <div class="intro-heading wow fadeIn heading-font"><span class="secondary-font">Celebrating</span>Carson and Svetlana</div>
                 </div>
             </div>
         </header>
-
         <section id="welcome">
-            <div class="section-inner">
-
+            <div>
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-12 text-center mb100 wow fadeIn">
+                        <div class="col-lg-12 text-center wow fadeIn">
                             <h2 class="section-heading">Carson and Svetlana</h2>
                             <hr class="thin-hr">
                             <h3 class="section-subheading secondary-font">Join them as they tie the knot.</h3>
@@ -109,7 +112,7 @@
                     <h3 class="section-subheading secondary-font days"></h3>
                     <script>
                       $(function(){
-                      var days = moment([2016, 6, 5]).diff(new Date(), "days");
+                      var days = moment("2016-06-05").diff(moment(), "days");
 
                         $(".days").html(days + " Days Until Our Wedding!")
                       })
@@ -135,11 +138,19 @@
                         </div>
                       </div>
                     </div>
+                </div>
+            </div>
         </section>
-        <h3 class="section-subheading secondary-font text-center">Thank you for visiting our wedding website!</h3>
-           <h5 class="text-center">We have been blessed to have all of you in our lives and we are so excited to share our special day with you. We hope you’ll be able to join us for our ceremony and reception. You can use this site to find accommodation ideas, day-of information, registry details, our engagement photos and even a way to RSVP! (Of course you can still send your RSVP in the mail!)</h5>
+        <br />
+        <h3 class="section-subheading secondary-font text-center">
+            Thank you for visiting our wedding website!
+        </h3>
+        <div class="col-sm-6 center-block text-justify">
+            We have been blessed to have all of you in our lives and we are so excited to share our special day with you. We hope you’ll be able to join us for our ceremony and reception. You can use this site to find accommodation ideas, day-of information, registry details, our engagement photos and even a way to RSVP! (Of course you can still send your RSVP in the mail!)
+        </div>
 
-
+        <br />
+        <br />
      	<section class="light-wrapper light-opaqued parallax" data-parallax="scroll" data-image-src="assets/img/bg/bg8.jpg" data-speed="0.7">
             <div class="section-inner">
                 <div class="wow fadeIn">
@@ -202,7 +213,7 @@
                                             </div>
         				                </div>
         				            </div>
-                            <footer id="details" class="white-wrapper">
+                            <footer id="details">
                                 <div class="container">
                                     <div class="row">
                                         <div class="col-md-12 text-center">
@@ -210,15 +221,21 @@
 
                                             <hr class="thin-hr" />
 
-                                            <div class="col-sm-10 col-sm-offset-1 section-inner">
-
+                                            <div class="col-sm-10 col-sm-offset-1">
+                                              <br />
+                                              <br />
                                               <div>
                                                   <img src="assets/img/beachhouse.jpg">
                                               </div>
                                               <h3 class="text-center"> Ceremony to begin at 5pm </h3>
                                               <h4 class="text-center">Cocktail Hour and Reception to Follow</h4>
-
-                                              <h5 class="text-center"><br><br>We have reserved a block of rooms at two local hotels for the Holt/Wright Wedding:</h4>
+                                              <br>
+                                              <br>
+                                              <h1 class="secondary-font">
+                                                Hotels
+                                              </h1>
+                                              <hr class="thin-hr" />
+                                              <div class="text-center"><br />We have reserved a block of rooms at two local hotels, mention the Holt/Wright Wedding when booking, and enjoy your stay!</div>
                                                 <div class="col-sm-6">
                                                   <p><b><br>Best Western North East Inn</b></p>
                                                   <p>39 Elwoods Rd</p>
@@ -241,23 +258,26 @@
 
 
         <section id="gifts">
-            <div class="section-inner">
-
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12 text-center mb100 wow fadeIn">
-                            <h2 class="section-heading">Gift Registration</h2>
-                            <hr class="thin-hr">
-                            <h3 class="section-subheading secondary-font">Our ideal suggestions.</h3>
-                        </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center wow fadeIn">
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <h2 class="section-heading">Gift Registration</h2>
+                        <hr class="thin-hr">
+                        <h3 class="section-subheading secondary-font">Our ideal suggestions.</h3>
                     </div>
                 </div>
+            </div>
         </section>
-                <footer id="details" class="white-wrapper">
+            <br />
+                <footer id="details">
                     <div class="col-sm-4">
                         <div class="row">
                             <div class="col-md-12 text-center">
-                              <a href="http://www.target.com/gift-registry/registry/HRTMmDfMaxoZY1RqW5hkvA?lnk=copiedLink"><img src="assets/img/logo-target.jpg" height="100" width="100"/></a>
+                              <a href="http://www.target.com/gift-registry/registry/HRTMmDfMaxoZY1RqW5hkvA?lnk=copiedLink"><img src="assets/img/logo-target.jpg" height="100"/></a>
 
                             </div>
                           </div>
@@ -266,7 +286,7 @@
                         <div class="col-sm-4">
                             <div class="row">
                                 <div class="col-md-12 text-center">
-                                  <a href="http://www1.macys.com/registry/wedding/guest/?registryId=6511153"><img src="assets/img/Macys-Logo.jpg" height="100" width="200"/></a>
+                                  <a href="http://www1.macys.com/registry/wedding/guest/?registryId=6511153"><img src="assets/img/Macys-Logo.jpg" height="100" /></a>
 
                                 </div>
                               </div>
@@ -275,7 +295,7 @@
                             <div class="col-sm-4">
                                 <div class="row">
                                     <div class="col-md-12 text-center">
-                                      <a href="https://www.amazon.com/registry/wedding/2IGN0LN9VVLBI"><img src="assets/img/amazon-logo.jpg" height="100" width="200"/></a>
+                                      <a href="https://www.amazon.com/registry/wedding/2IGN0LN9VVLBI"><img src="assets/img/amazon-logo.jpg" height="100" /></a>
 
                                     </div>
                                   </div>
@@ -292,42 +312,39 @@
         	</div>
         </section>
 
-        <footer id="rsvp" class="white-wrapper">
+        <footer id="rsvp">
             <div class="container">
                 <div class="row">
+                    <br />
+                    <br />
+                    <br />
                     <div class="col-md-12 text-center">
-                        <h4 class="footer-goodbye">We look forward to seeing you!</h4>
+                        <h1 class="secondary-font">We look forward to seeing you!</h1>
                     </div>
-
                     <hr class="col-sm-12 thin-hr" />
 
-                    <div class="col-sm-10 col-sm-offset-1 section-inner">
+                    <div class="col-sm-10 col-sm-offset-1">
+                        <div id="message"></div>
+                          <iframe src="https://docs.google.com/forms/d/1AC7mtPZKVOlgwFKJdSDD0yQxRPYVEhkfPiCyHmXFslM/viewform?embedded=true" width="760" marginheight="0" height="1000" marginwidth="0" frameborder="0" scrolling="no" onload="resizeIframe(this)">Loading...</iframe> 
+                        </div>
+                        <section id="photos">
+                            <div class="section-inner">
 
-                    <div id="message"></div>
-                        <form method="post" action="sendemail.php" id="contactform" class="main-contact-form wow fadeIn" data-wow-delay="0.2s">
-                            <input type="text" class="form-control col-md-6" name="name" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name." />
-                            <input type="text" class="form-control col-md-6" name="email" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address." />
-                            <textarea name="comments" class="form-control" id="comments" placeholder="Your Message *" required data-validation-required-message="Please enter a message."></textarea>
-                            <input class="btn btn-primary mt30" type="submit" name="submit" value="Submit" />
-                        </form>
-                    </div>
-                    <section id="photos">
-                        <div class="section-inner">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-12 text-center mb100 wow fadeIn">
+                                            <h2 class="section-heading">Engagement Photos</h2>
+                                            <hr class="thin-hr">
 
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-lg-12 text-center mb100 wow fadeIn">
-                                        <h2 class="section-heading">Engagement Photos</h2>
-                                        <hr class="thin-hr">
-
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                    </section>
+                        </section>
 
 
-                    <div class="col-md-12 text-center wow fadeIn">
-                        <span class="copyright">Copyright 2015. Designed by DISTINCTIVE THEMES</span>
+                        <div class="col-md-12 text-center wow fadeIn">
+                            <span class="copyright">Copyright 2015. Designed by DISTINCTIVE THEMES</span>
+                        </div>
                     </div>
                 </div>
             </div>
